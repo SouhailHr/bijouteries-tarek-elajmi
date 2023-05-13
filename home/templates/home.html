@@ -1,0 +1,154 @@
+{% load static %}
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Bijouteries Tarek Elajmi | Accueil </title>
+		 <link rel="icon" href="{% static 'img/fav.jpg' %}" type="image/x-icon">
+		 <link rel="shortcut icon" href="{% static 'img/fav.jpg' %}" type="image/x-icon">
+		    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link href="{% static 'css/style.css' %}"  rel="stylesheet" type="text/css"  media="all" />
+		<meta name="keywords" content="Fleck iphone web template, Android web template, Smartphone web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+		<link href='https://fonts.googleapis.com/css?family=Average+Sans' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="{% static 'css/slider.css' %}" type="text/css" media="screen" />
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+		    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nivoslider/3.2/jquery.nivo.slider.pack.min.js"></script>
+		    <script type="text/javascript">
+		    $(window).load(function() {
+		        $('#slider').nivoSlider();
+		    });
+		    </script>
+	</head>
+	<body>
+
+		<!---Start-Header-->
+		<div class="header">
+			<!---Start-wrap-->
+		<div class="wrap">
+			<!---Start-Logo-->
+
+				<!---End-Logo-->
+				<!---Start-top-nav-->
+				<div class="top-nav">
+					<ul>
+					<li><a href="/">Accueil |</a></li>
+					<li><a href="/product">Nouveauté |</a></li>
+					<li><a href="{% url 'product-filter' category='Ensembles' %}">Ensembles |</a></li>
+                    <li><a href="{% url 'product-filter' category='Bagues' %}">Bagues |</a></li>
+                    <li><a href="{% url 'product-filter' category='Bracelets' %}">Bracelets |</a></li>
+                    <li><a href="{% url 'product-filter' category='Sollitaire' %}">Sollitaire |</a></li>
+                    <li><a href="{% url 'product-filter' category='Serie' %}">Série 3P |</a></li>
+                    <li><a href="{% url 'product-filter' category='Chichkhane' %}">Chichkhane |</a></li>
+					</ul>
+				</div>
+				<div class="clear"> </div>
+				<!---End-top-nav-->
+			</div>
+			<!---End-Header-->
+			</div>
+			<!---start-Imgslider-->
+			<div class="img-slider">
+				<div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img type="image/jpg" src="{% static 'img/1.jpg' %}" alt="" title="#htmlcaption" />
+                <img type="image/jpg" src="{% static 'img/2.jpg' %}" alt="" />
+                <img type="image/jpg" src="{% static 'img/3.jpg' %}"  alt="" />
+                <img type="image/jpg" src="{% static 'img/4.jpg' %}"  alt=""  />
+                <img type="image/jpg" src="{% static 'img/5.jpg' %}"  alt=""  />
+                <img type="image/jpg" src="{% static 'img/6.jpg' %}"  alt=""  />
+                <img type="image/jpg" src="{% static 'img/7.jpg' %}"  alt=""  />
+                <img type="image/jpg" src="{% static 'img/8.jpg' %}"  alt="" />
+                <img type="image/jpg" src="{% static 'img/15.jpg' %}"  alt="" />
+                <img type="image/jpg" src="{% static 'img/14.jpg' %}"  alt="" />
+                <img type="image/jpg" src="{% static 'img/13.jpg' %}"  alt="" />
+                <img type="image/jpg" src="{% static 'img/12.jpg' %}"  alt="" />
+                <img type="image/jpg" src="{% static 'img/11.jpg' %}"  alt=""/>
+                <img type="image/jpg" src="{% static 'img/10.jpg' %}"  alt="" title="#htmlcaption" />
+
+
+
+
+
+
+
+
+
+            </div>
+        	</div>
+			</div>
+
+
+			<div class="content">
+
+				<div class="content-heading">
+					<div class="wrap">
+					<div class="sicial-contentheading">
+						<ul>
+							<li><a target="_blank" href="https://www.instagram.com/bijouteries.tarek.elajmi/"><img src="{% static 'img/insta.png' %}" title="Instagram" /></a></li>
+							<li><a target="_blank" href="https://fr-fr.facebook.com/elajmikais/"><img src="{% static 'img/facebook.png' %}" title="Facebook" /></a></li>
+							<li><a target="_blank" href="https://wa.me/21622801998"><img src="{% static 'img/whatsapp.png' %}" title="Whatsapp" /></a></li>
+
+						</ul>
+					</div>
+					<div class="content-heading-info">
+						<h4>Bienvenue chez Bijouteries Tarek Elajmi </h4>
+						<p></p>
+					</div>
+					<div class="clear"> </div>
+				</div>
+				</div>
+				<div class="clear"> </div>
+			</div>
+			</div>
+			<div class="clear"> </div>
+			<!---start-footer-->
+			<div class="footer">
+				<div class="wrap">
+				<div class="footer-grid1">
+					<h4>Contact</h4>
+					<ul>
+						<li><a href="#">Tel : +21622801998</a></li>
+						<li><a href="#">Fax : +21676220220</a></li>
+						<li><a href="#">Email : Bijouteries.elajmi@gmail.com</a></li>
+
+					</ul>
+				</div>
+				<div class="footer-grid1">
+					<h4>Adresse</h4>
+					<ul>
+						<li><a href="#">rue mohamed khadouma (soug dhhab).gafsa</a></li>
+						<li><a href="#">2111 Gafsa, Tunisie</a></li>
+					</ul>
+				</div>
+				<div class="footer-grid1">
+					<h4>Maps</h4>
+					<ul>
+						<li><a target="_blank" href="https://www.google.com/maps/place/Bijouteries+Tarek+Elajmi/@34.4175646,8.7870907,17z/data=!4m8!1m2!2m1!1sBijouteries+Tarek+Elajmi,+Rue+du+Citron,+Gafsa+Sud,+Gafsa!3m4!1s0x12f896fee2389923:0x69ff154060d24f56!8m2!3d34.4173457!4d8.7893149" ><img class="_a3f img" src="https://external.ftun10-1.fna.fbcdn.net/static_map.php?v=2012&amp;osm_provider=2&amp;ccb=4-4&amp;size=306x98&amp;zoom=15&amp;markers=34.42869595%2C8.79898008&amp;language=fr_FR&amp;scale=2" width="306" height="98"></li></a>
+					</ul>
+				</div>
+				<div class="sub-footer-right">
+					<a href="#"><img src="{% static 'img/logo.png' %}" title="logo" /></a>
+				</div>
+				<div class="clear"> </div>
+			</div>
+			</div>
+			<div class="clear">
+				<!---start-sub-footer-->
+			<div class="sub-footer">
+				<div class="wrap">
+				<div class="sub-footer-right">
+                  <p>&#169 2022 Bijouteries Tarek Elajmi et ses fils . Tous les droits sont réservés .</p>
+				</div>
+				<div class="clear"> </div>
+			</div>
+		</div>
+		</div>
+		<!---End-wrap-->
+
+	</body>
+</html>
+

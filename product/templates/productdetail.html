@@ -1,0 +1,213 @@
+{% load static %}
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Bijouteries Tarek Elajmi | détails du produit </title>
+		<link rel="shortcut icon" type="image/jpg" href="{% static 'img/fav.jpg' %}" />
+		<link href="{% static 'css/style.css' %}"  rel="stylesheet" type="text/css"  media="all" />
+		<link href="{% static 'css/slider.css' %}"  rel="stylesheet" type="text/css"  media="all" />
+
+
+		<meta name="keywords" content="Fleck iphone web template, Android web template, Smartphone web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+		<link href='https://fonts.googleapis.com/css?family=Average+Sans' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Righteous&display=swap' rel='stylesheet' type='text/css'>
+		   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/journal/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome, Style -->
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style2.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/smoothproducts.css' %}">
+	</head>
+	<body style="background-color: #DCE3CA">
+
+		<!---Start-Header-->
+		<div class="header">
+			<!---Start-wrap-->
+		<div class="wrap">
+			<!---Start-Logo-->
+
+				<!---End-Logo-->
+				<!---Start-top-nav-->
+				<div class="top-nav">
+					<ul>
+					<li><a href="/">Accueil |</a></li>
+					<li><a href="/product">Nouveauté |</a></li>
+					<li><a href="{% url 'product-filter' category='Ensembles' %}">Ensembles |</a></li>
+                    <li><a href="{% url 'product-filter' category='Bagues' %}">Bagues |</a></li>
+                    <li><a href="{% url 'product-filter' category='Bracelets' %}">Bracelets |</a></li>
+                    <li><a href="{% url 'product-filter' category='Sollitaire' %}">Sollitaire |</a></li>
+                    <li><a href="{% url 'product-filter' category='Serie' %}">Série 3P |</a></li>
+                    <li><a href="{% url 'product-filter' category='Chichkhane' %}">Chichkhane |</a></li>
+					</ul>
+				</div>
+				<div class="clear"> </div>
+				<!---End-top-nav-->
+			</div>
+			<!---End-Header-->
+			</div>
+				<div class="clear"> </div>
+				    <br/>
+				{% block content %}
+	    	<!-- Product Detail Page Start -->
+	<div class="product-detail">
+		<div class="container">
+			<div class="product-detail-left">
+				<div class="sp-loading">
+					<img src="{% static 'img/sp-loading.gif' %}" >
+					Loading Images
+				</div>
+				<div class="sp-wrap">
+					<a href={{ product.imagebig.url }}><img src={{ product.imagebig.url }} alt="" /></a>
+					<a href={{ product.imageside.url }}><img src={{ product.imageside.url }} alt="" /></a>
+				</div>
+			</div>
+			<div class="product-detail-right">
+			    <br>
+				<h5><b>Description : </b><Strong>{{ product.desciption }} </Strong></h5>
+			</div>
+			 <div class="product-detail-feature">
+				<div class="sicial-contentheading">
+						<ul>
+							<li><a target="_blank" href="https://www.instagram.com/bijouteries.tarek.elajmi/"><img src="{% static 'img/insta.png' %}" title="Instagram" /></a></li>
+							<li><a href="https://fr-fr.facebook.com/elajmikais/" target="_blank"><img src="{% static 'img/facebook.png' %}" title="Facebook" /></a></li>
+							<li><a target="_blank" href="https://wa.me/21622801998"><img src="{% static 'img/whatsapp.png' %}" title="Whatsapp" /></a></li>
+
+						</ul>
+				</div>
+					<div class="content-heading-info">
+						<h4>Bienvenue chez Bijouteries Tarek Elajmi </h4>
+					</div>
+			</div>
+		</div>
+		        {% endblock %}
+
+	</div>
+	<!-- Product Detail Page End -->
+
+				<div class="clear"> </div>
+				<!---start-footer-->
+				<div class="clear"> </div>
+				<div class="footer">
+				<div class="wrap">
+				<div class="footer-grid1">
+					<h4>Contact</h4>
+					<ul>
+						<li><a href="#">Tel : +21622801998</a></li>
+						<li><a href="#">Email : Bijouteries.elajmi@gmail.com</a></li>
+						<li><a href="#">Fax : +21676220220</a></li>
+					</ul>
+				</div>
+				<div class="footer-grid1">
+					<h4>Adresse</h4>
+					<ul>
+						<li><a href="#">rue mohamed khadouma (soug dhhab).gafsa</a></li>
+						<li><a href="#">2111 Gafsa, Tunisie</a></li>
+					</ul>
+				</div>
+				<div class="footer-grid1">
+					<h4>Maps</h4>
+					<ul>
+						<li><a target="_blank" href="https://www.google.com/maps/place/Bijouteries+Tarek+Elajmi/@34.4175646,8.7870907,17z/data=!4m8!1m2!2m1!1sBijouteries+Tarek+Elajmi,+Rue+du+Citron,+Gafsa+Sud,+Gafsa!3m4!1s0x12f896fee2389923:0x69ff154060d24f56!8m2!3d34.4173457!4d8.7893149" ><img class="_a3f img" src="https://external.ftun10-1.fna.fbcdn.net/static_map.php?v=2012&amp;osm_provider=2&amp;ccb=4-4&amp;size=306x98&amp;zoom=15&amp;markers=34.42869595%2C8.79898008&amp;language=fr_FR&amp;scale=2" width="306" height="98"></li></a>
+					</ul>
+				</div>
+				<div class="sub-footer-right">
+					<a href="#"><img src="{% static 'img/logo.png' %}" title="logo" /></a>
+				</div>
+				<div class="clear"> </div>
+			</div>
+			</div>
+			<div class="clear">
+				<!---start-sub-footer-->
+			<div class="sub-footer">
+				<div class="wrap">
+				<div class="sub-footer-right">
+                  <p>&#169 2022 Bijouteries Tarek Elajmi et ses fils . Tous les droits sont réservés .</p>
+				</div>
+				<div class="clear"> </div>
+			</div>
+		</div>
+		</div>
+		<!---End-wrap-->
+<!-- Jquery V.3.3.1 -->
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/jquery.cycle.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/smoothproducts.min.js' %}"></script>
+<script>
+	$("#sliderShuffle").cycle({
+		next: '#next',
+		prev: '#prev'
+	});
+
+	$('.owl-carousel').owlCarousel({
+		items:4,
+		loop:true,
+		margin:15,
+		autoplay:true,
+		autoplayTimeout:3000, //3 Second
+		nav:true,
+		responsiveClass:true,
+		responsive:{
+			0:{
+				items:1,
+				nav:true
+			},
+			600:{
+				items:3,
+				nav:true
+			},
+			1000:{
+				items:4,
+				nav:true
+			}
+		}
+
+	});
+
+	$(function(){
+		$(".topbar ul li").click(function(){
+			$(".topbar ul li").not(this).find("ul").slideUp();
+			$(this).find("ul").slideToggle();
+		});
+		$(".topbar ul li ul li, productCategories ul li .megamenu").click(function(e){
+			e.stopPropagation();
+		});
+		$(".productCategories ul li").click(function(){
+			$(".productCategories ul li").not(this).find(".megamenu").hide();
+			$(this).find(".megamenu").toggle();
+		});
+		$(".otherInfoBody").hide();
+		$(".otherInfoHandle").click(function(){
+			$(".otherInfoBody").slideToggle();
+		});
+		$(".signBtn").click(function(){
+			$("body").css("overflow", "hidden");
+			$(".loginBox").slideDown();
+		});
+		$(".closeBtn").click(function(){
+			$("body").css("overflow", "visible");
+			$(".loginBox").slideUp();
+		});
+		$(".productViewBtn").click(function(e){
+			e.preventDefault();
+			$("body").css("overflow", "hidden");
+			$(".productViewBox").slideDown();
+		});
+		$(".productViewBox-closeBtn").click(function(){
+			$("body").css("overflow", "visible");
+			$(".productViewBox").slideUp();
+		});
+
+		$(".sp-wrap").smoothproducts();
+	});
+</script>
+
+	</body>
+</html>
+
